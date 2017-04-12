@@ -10,5 +10,25 @@
 	<p>日期：{{post.date|escape}}</p>
 	<hr>
 	<div class="post-content">{{post.content}}</div>
+	<!--多说评论框 start-->
+	<div class='ds-thread' data-thread-key='post' data-title='{{post.title|escape}}' data-url='http://42.96.159.91:3002'></div>
+	<!--多说评论框 end-->
+	
+	<!--多说公共js代码 start-->
+	<script type='text/javascript'>
+		var duoshuoQuery = {
+			short_name:'node-in-action-abang'
+		};
+		(function(){
+			var ds = document.createElement('script');
+			ds.type = 'text/javascript';
+			ds.async = true;
+			ds.src = (document.location.protocol=='https:'?'https:':'http:')+'//static.duoshuo.com/embed.js';
+			ds.charset = 'utf-8';
+			(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(ds);
+		})();
+	
+	</script>
+	<!--多说公共js代码 end-->
 </body>
 </html>
